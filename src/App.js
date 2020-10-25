@@ -1,23 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
+import Header from './Header';
+import Groups from './Groups';
+import Students from './Students';
+import Main from './Main';
+import data_g from "./data_groups.json";
+import data_s from "./data_students.json";
+import Group from "./Group";
+import Student from "./Student";
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router> 
+        <Header/>
+        <Switch>
+            <Route exact path="/">
+              <Main groups={data_g} students={data_s} />
+            </Route>
+            <Route path="/groups/:id" component={Group} />
+            <Route path="/students/:id" component={Student} />
+            <Route path="/students">
+              <Students groups={data_g} students={data_s}/>
+            </Route>
+            <Route path="/groups">
+              <Groups groups={data_g} students={data_s}/>
+            </Route>
+        </Switch>
+      </Router>
+
     </div>
   );
 }
