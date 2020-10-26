@@ -23,10 +23,14 @@ function App() {
             <Route exact path="/">
               <Main groups={data_g} students={data_s} />
             </Route>
-            <Route path="/groups/:id" component={Group} />
-            <Route path="/students/:id" component={Student} />
+            <Route path="/groups/:id">
+              <Group groups={data_g} students={data_s}/>
+            </Route>
+            <Route path="/students/:id">
+              <Student groups={data_g} students={data_s} id=":id"/>
+            </Route>
             <Route path="/students">
-              <Students groups={data_g} students={data_s}/>
+              <Students groups={data_g} students={data_s} />
             </Route>
             <Route path="/groups">
               <Groups groups={data_g} students={data_s}/>

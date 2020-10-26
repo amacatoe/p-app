@@ -4,7 +4,6 @@
             "id":1,
             "fio": "Барынин Егор Игоревич",
             "group_id": 1,
-            "course": 4,
             "type": "Коммерция",
             "age": 21,
             "avgPoint": 4,
@@ -23,27 +22,24 @@
             "id":3,
             "fio": "Панкин Олег Игоревич",
             "group_id": 1,
-            "course": 4,
             "type": "Бюджет",
             "age": 20,
-            "avgPoint": 4.2,
+            "avgPoint": 4.3,
             "debt": 1
         },
         {
             "id":4,
             "fio": "Краснов Денис Олегович",
             "group_id": 1,
-            "course": 4,
             "type": "Бюджет",
             "age": 21,
-            "avgPoint": 4.9,
+            "avgPoint": 4.7,
             "debt": 1
         },
         {
             "id":5,
             "fio": "Новичкова Мария Батьковна",
             "group_id": 2,
-            "course": 4,
             "type": "Бюджет",
             "age": 21,
             "avgPoint": 4.5,
@@ -53,11 +49,19 @@
             "id":6,
             "fio": "Солопекин Дмитрий Батькович",
             "group_id": 3,
-            "course": 4,
             "type": "Бюджет",
             "age": 21,
             "avgPoint": 5,
             "debt": 0
+        },
+        {
+            "id":7,
+            "fio": "Синцова Ольга Сергеевна",
+            "group_id": 4,
+            "type": "Бюджет",
+            "age": 19,
+            "avgPoint": 5,
+            "debt": 5
         }
     ]
 }

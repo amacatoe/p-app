@@ -36,4 +36,5 @@ function getStudents(students, id) {
   .map(student => <li key={student.id}><Link to={'/students/' + student.id}>{student.fio}</Link></li>);
   return ulStudent;
 }
+
 export default Main;
